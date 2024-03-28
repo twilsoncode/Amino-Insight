@@ -1,0 +1,28 @@
+[
+ {
+   "Data": "Abbr_CAPS",
+   "Alanine": "ALA",
+   "Arginine": "ARG",
+   "Asparagine": "ASN",
+   "Aspartic acid": "ASP",
+   "Cysteine": "CYS",
+   "Glutamic acid": "GLU",
+   "Glutamine": "GLN",
+   "Glycine": "GLY",
+   "Histidine": "HIS",
+   "Hydroxyproline": "HYP",
+   "Isoleucine": "ILE",
+   "Leucine": "LEU",
+   "Lysine": "LYS",
+   "Methionine": "MET",
+   "Phenylalanine": "PHE",
+   "Proline": "PRO",
+   "Pyroglutamatic": "GLP",
+   "Serine": "SER",
+   "Threonine": "THR",
+   "Tryptophan": "TRP",
+   "Tyrosine": "TYR",
+   "Valine": "VAL"
+ }
+ 
+]

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Site made with Mobirise Website Builder v5.8.12, https://mobirise.com -->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Mobirise v5.8.12, mobirise.com">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<link rel="shortcut icon" href="../static/images/aa-icon-1.ico" type="image/x-icon">
+<meta name="description" content="This Amino Insight function calculates the fraction of helix, turn and sheet of a protein.">
+
+
+<title>Secondary Structure Fraction</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="../static/bootstrap/css/bootstrap-grid.min.css">
+<link rel="stylesheet" href="../static/bootstrap/css/bootstrap-reboot.min.css">
+<link rel="stylesheet" href="../static/parallax/jarallax.css">
+<link rel="stylesheet" href="../static/dropdown/css/style.css">
+<link rel="stylesheet" href="../static/socicon/css/styles.css">
+<link rel="stylesheet" href="../static/theme/css/style.css">
+<link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+<link rel="preload" as="style" href="../static/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="../static/mobirise/css/mbr-additional.css" type="text/css">
+
+
+
+</head>
+<body>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<!-- Cookies JavaScript -->
+<script src="../static/js/jquery.bs.gdpr.cookies.js"></script>
+<script type="text/javascript">
+    var settings = {
+        message: 'The Amino Insight website monitors traffic via Google Analytics cookies. <b> Read more in our privacy policy ',
+        moreLinkLabel: 'here.</b>',
+        messageMaxHeightPercent: 10,
+        moreLink: '/privacy_policy',
+        delay: 1000,
+        allowAdvancedOptions: true,
+        OnAccept : function() {
+            console.log('Yay! User accepted your cookies window!');
+            console.log('User preferences');
+            var preferences = $.fn.bsgdprcookies.GetUserPreferences();
+            console.log(preferences);
+
+        }
+    }
+
+    $(document).ready(function() {
+        $('body').bsgdprcookies(settings);
+
+        $('#cookiesBtn').on('click', function(){
+            $('body').bsgdprcookies(settings, 'reinit');
+        });
+    });
+</script>
+
+
+
+
+<section data-bs-version="5.1" class="menu cid-tFnqLVlD2c" once="menu" id="menu1-q">
+
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="/">
+                        <img src="../static/images/aa-icon-1.ico" alt="Mobirise Website Builder" style="height: 3.8rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-black text-primary display-7" href="/">Amino Insight</a></span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="/">Home</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="tutorial">Tutorial</a></li>
+
+                <li class="nav-item dropdown"><a class="nav-link link text-black dropdown-toggle show display-4" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Amino Insight Tools 1</a>
+
+                  <div class="dropdown-menu show" aria-labelledby="dropdown-701" data-bs-popper="none">
+
+                    <a class="text-black dropdown-item text-primary display-4" href="molecular_formula">Molecular Formula</a><a class="text-black dropdown-item display-4"  href="molecular_weight">Molecular Weight</a><a class="text-black dropdown-item display-4" href="isoelectric_point">Isoelectric Point</a><a class="text-black show dropdown-item display-4" href="graph">Graph<br><a class="text-black show dropdown-item display-4" href="aa_viewer">Structure Viewer<br></a><a class="text-black show dropdown-item display-4" href="nglviewer">Structure Viewer v2<br></a>
+
+
+                    <li class="nav-item dropdown"><a class="nav-link link text-black dropdown-toggle show display-4" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Amino Insight Tools 2</a>
+
+                      <div class="dropdown-menu show" aria-labelledby="dropdown-701" data-bs-popper="none">
+
+
+                        <a class="text-black show dropdown-item display-4" href="table">Table Data<br></a><a class="text-black show dropdown-item display-4" href="aromaticity">Aromaticity<br></a><a class="text-black show dropdown-item display-4" href="instability_index">Instability Index<br></a><a class="text-black show dropdown-item display-4" href="secondary_structure_fraction">Secondary Structure Fraction<br></a><a class="text-black show dropdown-item display-4" href="gravy">GRAVY<br></a><a class="text-black show dropdown-item display-4" href="molar_extinction_coefficient">Molar Extinction Coefficient<br></a><a class="text-black show dropdown-item display-4" href="count_amino_acids">Count Amino Acids<br></a></a></div></li>
+
+
+                  </ul>
+
+        </div>
+        </div>
+    </nav>
+
+</section>
+
+<section data-bs-version="5.1" class="form9 cid-tFns98tFZO" id="form9-s">
+
+
+    <div class="align-center container">
+        <div class="row justify-content-center">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                <strong>Secondary Structure Fraction</strong></h3>
+                <br>
+                <p class="mbr-text mbr-fonts-style display-7">This function calculates the fraction of helix, turn and sheet. Returns a list of the fraction of amino acids which tend to be in Helix, Turn or Sheet.</p>
+                <p class="mbr-text mbr-fonts-style display-7">Amino acids in helix: V, I, Y, F, W, L.</p>
+                <p class="mbr-text mbr-fonts-style display-7">Amino acids in Turn: N, P, G, S.</p>
+                <p class="mbr-text mbr-fonts-style display-7">Amino acids in sheet: E, M, A, L.</p>
+                <p class="mbr-text mbr-fonts-style display-7">Returns a tuple of three floats (Helix, Turn, Sheet).</p>
+
+        </div>
+        </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-8 mx-auto mbr-form">
+                    <div class="row">
+
+                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">Oops...! some problem!</div>
+                    </div>
+                    <div class="dragArea row">
+                        <div class="col-lg-12">
+                            <p class="mbr-text mbr-fonts-style align-center mb-4 display-7"></p>
+                        </div>
+                        <div class="align-center form-group mb-3" data-for="name">
+                            <input placeholder="Secondary Structure Fraction" class="form-control" id="aainput5" onkeyup="aaData2()">
+                        </div>
+
+                        <div class="mbr-section-head">
+                            <h5 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                                <strong id="aaoutput5"></strong></h5>
+
+                        </div>
+
+
+
+                        <br>
+
+                <script>
+                    function aaData2() {
+                        var aavalue5 = document.getElementById('aainput5').value;
+                        $.ajax({
+                            url: '/aa_secondary_structure_fraction_value',
+                            type: 'POST',
+                            async: false,
+                            data: { 'aa_secondary_structure_fraction_data': aavalue5},
+                            success: function(response) {
+                                document.getElementById('aaoutput5').innerHTML = response;
+                            },
+                            error: function(error) {
+                                console.log(error);
+                            }
+                        });
+                    }
+                </script>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section data-bs-version="5.1" class="form9 cid-tFns98tFZO" id="form9-s">
+    
+    
+    <div class="align-center container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                <strong>Secondary Structure Fraction Backend</strong></h3>
+            <br>
+        </div>
+        <p class="mbr-text mbr-fonts-style display-7">
+            The secondary structure fraction amino insight function uses biopython in its output.
+          You can learn more about biopython and its installation <a href="https://biopython.org/" class="text-primary" target="_blank">here</a>.
+        </p>
+  </div>
+  
+  </section>
+
+<section data-bs-version="5.1" class="footer3 cid-s48P1Icc8J" once="footers" id="footer3-i">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="row row-copirayt">
+                <p class="mbr-text mb-0 mbr-fonts-style mbr-white align-center display-7">
+                    Amino Insight 2023
+                </p>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+<script src="../static/parallax/jarallax.js"></script>  <script src="../static/smoothscroll/smooth-scroll.js"></script>  <script src="../static/ytplayer/index.js"></script>  <script src="../static/dropdown/js/navbar-dropdown.js"></script>  <script src="../static/theme/js/script.js"></script>
+
+
+</body>
+</html>
